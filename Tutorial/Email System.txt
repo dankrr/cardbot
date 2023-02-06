@@ -1,0 +1,21 @@
+How to setup Bot Emails:
+
+Step 1: Go to config and find your email settings. They should look like this: "Email: {"
+
+Step 2: Create a brand new Gmail account (Must be gmail) and fill in the email address & password in the right fields (Read green text in config file for instructions)
+
+Step 3: Once you're done save the config file. Now it's time to change some security settings of your gmail account so that gmail doesn't block your emails
+
+	Step 3.1:
+	
+	Follow this guide to Enable " less secure apps to access your Gmail account": https://devanswers.co/allow-less-secure-apps-access-gmail-account/
+	
+	Step 3.2:
+	
+	Change to 'ON': https://imgur.com/a/AkPM77h
+	
+	
+Step 4: Once you're done msg the bot with !mail -> This will send a test email. Go to your spam folder (of your personal mail account, not bot's) and look for 
+an email titled: "Fast Steam Bots" -> Mark this email as 'not spam'
+
+		DONE! You'll now receive weekly emails showing your bot's activity + alert emails whenever your bot runs out of sets

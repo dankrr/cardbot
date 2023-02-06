@@ -1,0 +1,61 @@
+■ 0) Download Notepad++ here https://notepad-plus-plus.org/download/v7.6.2.html
+
+■ 1) First thing first: Install NoeJs from here: https://nodejs.org/en/download/
+
+■ 2) Download & install Steam Desktop Authenticator here: https://github.com/Jessecar96/SteamDesktopAuthenticator and scroll down to see the instructions!
+
+	How to get your shared_secret & identity_secret (which you need in order to fill the config file - which connects you to your bot):
+	■ If you're an iPhone user, use this guide: https://www.youtube.com/watch?v=23MTKlSPi7Y&t=90s
+	■ If you're an Android user, use this guide: https://www.youtube.com/watch?v=JjdOJVSZ9Mo&t=1s
+	
+0: Download & install Steam Desktop Authenticator here: https://github.com/Jessecar96/SteamDesktopAuthenticator and scroll down to see the instructions!
+1: Go to the SDA(Steam Desktop Authenticator) directory. If you have encryption disabled go to step 3.
+2: Open SDA and hit "Manage Encryption". Fill in your encryption key and when asked to create a new one leave the text box blank. This will disable encryption.
+3: Head over to the maFiles folder and open the file named after your accounts SteamID64.
+4: Search the file for shared_secret:"XXXXXXXXXXXXXX=", instead of XXX it should have a code there, it always ends with =
+5: Do the same for identity_secret, it will look similar.
+6. Go to config (found in SETTINGS folder) and fill in your identity_secret &shared_secret
+7. You're gonna need a Steam API Key. Get it here:  https://steamcommunity.com/dev/apikey (if it asks for a domain name, simply put in 127.0.0.1)
+
+■ 3) go to SETTINGS folder, and rightclick + edit config.js. Fill in all of the required fields (Tkae your time filling it all in and don't make mistakes, it's a very important step)
+
+	■ Make sure you have your Activation Key saved! The activation key will ONLY work with the account you bought the bot from. 
+	For example: if you bought steam bots with this account: https://steamcommunity.com/id/Go_Fast, the Key you received belongs to this account only
+	
+■ 4) It's HIGHLY recommended to Host your bot on a server (so that it runs 24/7 & smoothly), DigitalOcean is the best host there is for these kind of things.
+
+It costs $5 a month, but if you use this Link you'll get 2 Months for FREE! https://m.do.co/c/32bc618bdd0e (you'll still have to add $5 to get those 2 additional free months)
+
+■ How to set up a server with DigitalOcean
+
+1: Add funds, and create a Droplet. Hit "One Click Apps" and select NodeJS.
+2: Once created, download Putty and Filezilla: https://filezilla-project.org/ & http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+3: Open Putty, fill in the IP address sent to your e-mail and wait for the command prompt to open. Once opened fill in username "root" and the password sent to your email. You can copy your password in your email and paste it in Putty using right click, you wont see your password!
+4: It will ask you to fill in the password again, fill it in and fill in a new password and confirm it.
+5: Once you're done run the command: npm install -g forever. This allows the server to run the bot without a Putty window being opened.
+6: Now open FileZilla and connect to your server, username = root and the password is the password you've just set, port = 22.
+7: Drag the bot files in, wait for this to complete and head back to Putty.
+8: Run the command: npm i
+9: To start your bot run this command in Putty: forever start index.js
+
+■ 5) If you don't want to host your bot on a server, simply go to the text file named 'How to start the bot'
+
+
+■ 6) Once you're done go to the main directory and click on "start", or go to the text file named 'How to start the bot'
+
+		Your Bot is Ready to go!
+
+		
+			
+	
+	
+	
+			■ ■ ■ Youtube Tutorials: ■ ■ ■
+			
+1) How to install the bot on a server:
+
+https://youtu.be/BaWI2JIehio?t=1m17s
+
+2) How to get shared_secret & identity_secret:
+
+https://www.youtube.com/watch?v=JjdOJVSZ9Mo&t=1s
